@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>Desafio Front-End</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="css/principal.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+		<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<div id="barra">
+			<label class="tituloJanela" id="txtTitulo">Inicio</label>
+			<img onclick="exibeMenu();" src="img/menu.png">
+	</div>
+
+	<div id="sidebar" ativo="1">
+				<div>
+						<img src="https://image.flaticon.com/icons/png/128/187/187474.png">
+						<span>Projeto</span>
+				</div>
+
+        <a class="menu ativo">
+            <label>Gráfico</label>
+        </a>
+        <a class="menu">
+            <label>Tela 2</label>
+        </a>
+        <a class="menu">
+            <label>Tela 3</label>
+        </a>
+    </div>
+
+    <div id="container">
+
+				<div class="box" id="containerGrafico">
+						<div class="tituloBox">
+								<img src="img/plot.png" height="18px">
+								<label>Gráfico</label>
+						</div>
+						<div><canvas id="grafico"></canvas></div>
+				</div>
+
+        <div class="box" id="containerTabela">
+						<div class="tituloBox">
+								<img src="img/tabela.png" height="18px">
+								<label>Tabela</label>
+						</div>
+						<div style="padding: 20px;">
+		            <table id="tabela">
+		            </table>
+						</div>
+        </div>
+
+    </div>
+
+	<script src="lib/chart.min.js"></script>
+	<script src="lib/datatables.js"></script>
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script src="js/sistema.js"></script>
+	<script src="js/grafico.js"></script>
+
+</body>
+</html>
